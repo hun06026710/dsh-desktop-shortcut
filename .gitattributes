@@ -1,0 +1,8 @@
+# Shell scripts must stay LF: CRLF breaks them on macOS/Linux.
+*.sh text eol=lf
+# Keep the rest consistent.
+*.js text eol=lf
+*.ps1 text eol=crlf
+*.md text
+*.yml text
+*.json text

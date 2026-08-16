@@ -1,0 +1,14 @@
+# dsh bundle layer: mount the desktop-shortcut plugin (package root export).
+# The plugin auto-detects the OS (win32 -> .lnk, darwin -> .app, linux -> .desktop).
+# Config (optional) lives on the plugin row, e.g.:
+#   - insert:
+#       - id: dsh-shortcut
+#         name: 'dsh-desktop-shortcut'
+#         config:
+#           enabled: true
+#           name: 'dsh web'
+#           port: 3080
+#           dir: 'C:\\Users\\me\\Desktop'   # override for testing
+- insert:
+    - id: dsh-shortcut
+      name: 'dsh-desktop-shortcut'

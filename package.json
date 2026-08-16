@@ -1,0 +1,30 @@
+{
+  "name": "dsh-desktop-shortcut",
+  "version": "0.1.0",
+  "description": "dsh plugin: keeps a desktop shortcut that launches the dsh web UI in the background, with a custom icon. Create-if-missing on every boot.",
+  "type": "module",
+  "license": "MIT",
+  "keywords": ["dsh", "deepseek-harness", "plugin", "shortcut", "desktop"],
+  "exports": {
+    ".": "./index.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "index.js",
+    "cordis.patch.yml",
+    "assets",
+    "scripts",
+    "skills",
+    "README.md",
+    "README.zh-CN.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  }
+}
